@@ -30,7 +30,55 @@
             animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
             
         }
+
+        table td {
+            font-family: 'Times New Roman', Times, serif;
+            transition: 0.3s;
+        }
+        table td:hover {
+            transform: scale(1.04);
+            font-weight: bold;
+            color: black;
+            box-shadow: 10px;
+            transition: .2s;
+        }
+        
     </style>
+
+    
+
+    <table width="400", height="300", border="3", cellspacing="0", bgcolor="616161",>
+        <tr align="center", style="color: white;">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr align="center", style="color: white;">
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr align="center", style="color: white;">
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+    <br>
+    <form action="" , method="post">
+        <input type="text", name="firstname", placeholder="Ime" 
+        <br>
+        <input type="text", name="lastname", placeholder="Prezime"
+        <br>
+        <input type="text", name="mail", placeholder="email"
+        <br>
+        <p> Izaberite svoj pol </p>
+        <input type="radio" id="zensko" name="pol" value="Zensko">
+        <label for="Zensko">Zensko</label><br>
+        <input type="radio" id="musko" name="pol" value="Musko">
+        <label for="Musko">Musko</label><br>
+        
+    </form>
 
 
 </head>
