@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -36,14 +35,14 @@
 }
 
 body {
-    background: #000000;
+    background: #020808;
 }
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 7vh;
-    background-color:#000000;
+    background-color:#020808;
     color: #846751;
     animation: transitionIn 3s;
 }
@@ -55,7 +54,7 @@ nav {
 .nav_links {
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 50%;
     text-decoration: none;
 }
 .nav_links a{
@@ -127,29 +126,32 @@ h1 {
     border-radius: 30px;
 }
 .abs { 
-    font-size: 14px;
-    font-family: 'Fira Code', monospace;
+    font-size: 30px;
+    font-family: 'Saira Condensed', sans-serif;
+    text-align: right;
+    letter-spacing: 7px;
     color: #1e2e2e;
-    left: 65%;
-    position: absolute;
-    top: 50%;
+    position:absolute;
+    left: 60%;
+    top:40%;
     animation: transitionIn 3s;
 }
 .para {
-    font-size: 14px;
-    font-family: 'Fira Code', monospace;
+    font-size: 20px;
+    font-family: 'Saira Condensed', sans-serif;
     text-align: right;
-    color: #846751;
+    color: #1e2e2e;
     animation: slideIn 2s;
 }
 .ime {
     font-size: 30px;
     font-family: 'Saira Condensed', sans-serif;
     text-align: center;
-    letter-spacing: 4px;
+    letter-spacing: 7px;
     color: #1e2e2e;
     position:absolute;
-    top:49%;
+    left: 33%;
+    top:40%;
     animation: transitionIn 3s;
 
 
