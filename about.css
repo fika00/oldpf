@@ -10,6 +10,13 @@
     50%  {opacity: 1;}
     100% {opacity: 0;}
 }
+@keyframes vibr {
+    0%   {opacity: 0;}
+    25%  {opacity: 0;}
+    50%  {opacity: 0;}
+    75%  {opacity: 0;}
+    100% {opacity: 1;}
+}
 
 @keyframes transitionIn {
     0%   {opacity: 0;}
@@ -21,8 +28,10 @@
 
 @keyframes transitionOut {
     0%   {opacity: 0;}
-    25%  {opacity: 1;}
-    50%  {opacity: 1;}
+    25%  {opacity: 1;
+        transform: scale(.95)}
+    50%  {opacity: 1;
+        transform: scale(.95)}
     75%  {opacity: 1;
         transform: scale(1)}
     100% {opacity: 0;}
@@ -101,9 +110,7 @@ nav {
     background: #000000; 
     */
 }
-.gradient {
-    min-height: 10vh;
-}
+
 .parent {
     position: relative;
 }
@@ -171,6 +178,7 @@ nav {
     min-height: 70vh;
 }
 .code {
+    margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
     min-height: 85vh;
@@ -181,12 +189,28 @@ h2 {
     text-align: center;
     font-family: 'Saira Condensed', sans-serif;
     color: #1e2e2e;
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 5%;
 }
+.list {
+    margin-top: 3vh;
+    font-family: 'Saira Condensed', sans-serif;
+    text-align: right;
+    color: #846751;
+    list-style: none;
 
+}
+.list li {
+    letter-spacing: 4px;
+    transition: .2s;
+}
+.list li:hover {
+    letter-spacing: 7px;
+    text-shadow: 1px 1px 20px #aa8a72;
+    transition: .2s;
+}
 .text1 {
-    margin-top: 10%;
+    margin-top: 6%;
     margin-left: 50%;
     font-family: 'Saira Condensed', sans-serif;
     color: #1e2e2e;
@@ -216,13 +240,24 @@ h2 {
 .headphones {
     width: 50%;
     display: flex;
-    justify-content: center;
     float: left;
 }
 .headphones img {
     width: 30%;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 20%;
+}
+
+.code_s {
+    width: 50%;
+    display: flex;
+    float: left;
+}
+.code_s img {
+    width: 30%;
+    margin-right: auto;
+    margin-left: 10%;
+    margin-right: -20%;
 }
 
 .audiocon {
@@ -233,4 +268,12 @@ h2 {
 .audiocon audio{
     width: 100%;
     outline: 0px;
+}
+.footer_g {
+    min-height: 4vh;
+    background: linear-gradient(180deg, rgba(2,8,8,1) 0%, rgba(6,11,10,1) 90%, rgba(132,103,81,1) 100%);
+}
+footer {
+    min-height: 10vh;
+    background-color: #846751;
 }
