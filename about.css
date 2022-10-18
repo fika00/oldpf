@@ -90,7 +90,6 @@
 
 body {
   background: #020808;
-  animation: transitionIn 3s;
 }
 a:link {
   text-decoration: none;
@@ -161,6 +160,7 @@ nav {
 
 .parent {
   position: relative;
+  
 }
 .banner img {
   width: 100%;
@@ -177,6 +177,7 @@ nav {
 }
 .odvajanje {
   margin-top: 3%;
+
 }
 .logo {
   float: right;
@@ -217,18 +218,24 @@ nav {
   margin-left: 10%;
   margin-right: 10%;
   min-height: 85vh;
+  animation: transitionIn 3s;
+
 }
 
 .muzika {
   margin-left: 10%;
   margin-right: 10%;
   min-height: 70vh;
+  animation: transitionIn 3s;
+
 }
 .code {
   margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
   min-height: 60vh;
+  animation: transitionIn 3s;
+
 }
 
 h2 {

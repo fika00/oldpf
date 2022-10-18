@@ -1,0 +1,23 @@
+h1,h2 {
+    color: darkgray;
+    text-align: center;
+    font-weight: bold;
+}
+.naslov {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.sidebar h2 {
+    color: rgb(91, 91, 91);
+}
+
+.article p {
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .9cm;
+}
+.article p:first-child {
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3cm;
+}
