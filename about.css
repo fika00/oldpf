@@ -1,113 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600&display=swap");
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 @keyframes loop {
-    0%   {opacity: 0;}
-    50%  {opacity: 1;}
-    100% {opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 @keyframes vibr {
-    0%   {transform: translateX(0%);}
-    2%  {transform: translateX(1%);}
-    3%  {transform: translateX(-1%);}
-    6%  {transform: translateX(1%);}
-    7%  {transform: translateX(-1%);}
-    11%  {transform: translateX(0%);}
+  0% {
+    transform: translateX(0%);
+  }
+  2% {
+    transform: translateX(1%);
+  }
+  3% {
+    transform: translateX(-1%);
+  }
+  6% {
+    transform: translateX(1%);
+  }
+  7% {
+    transform: translateX(-1%);
+  }
+  11% {
+    transform: translateX(0%);
+  }
 
-
-    100% {transform: translateX(0%);}
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 @keyframes transitionIn {
-    0%   {opacity: 0;}
-    25%  {opacity: 0;}
-    50%  {opacity: 0;}
-    75%  {opacity: 0;}
-    100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes transitionOut {
-    0%   {opacity: 0;}
-    25%  {opacity: 1;
-        transform: scale(.95)}
-    50%  {opacity: 1;
-        transform: scale(.95)}
-    75%  {opacity: 1;
-        transform: scale(1)}
-    100% {opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(0.95);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+  }
 }
 @keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-    }
-    to{
-        transform: translateX(0%);
-
-    }
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
 
 body {
-    background: #020808;
+  background: #020808;
+  animation: transitionIn 3s;
 }
-a:link { text-decoration: none; }
+a:link {
+  text-decoration: none;
+}
 
+a:visited {
+  text-decoration: none;
+}
 
-a:visited { text-decoration: none; }
+a:hover {
+  text-decoration: none;
+}
 
-
-a:hover { text-decoration: none; }
-
-
-a:active { text-decoration: none; }
+a:active {
+  text-decoration: none;
+}
 
 a {
-    color: black;
+  color: black;
 }
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 7vh;
-    background-color:#020808;
-    color: #846751;
-    animation: transitionIn 3s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 7vh;
+  background-color: #020808;
+  color: #846751;
+  animation: transitionIn 3s;
 }
 .nav_div {
-    font-family: 'Saira Condensed', sans-serif;
-    font-size: 20px;
-    letter-spacing: 4px;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 20px;
+  letter-spacing: 4px;
 }
 .nav_links {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 40%;
-    width: 30%;
-    text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 40%;
+  width: 30%;
+  text-decoration: none;
 }
-.nav_links a{
-    font-family: 'Saira Condensed', sans-serif;
-    color: #846751;
+.nav_links a {
+  font-family: "Saira Condensed", sans-serif;
+  color: #846751;
 }
 .nav_links li {
-    list-style: none;
+  list-style: none;
 }
 .intro {
-    margin-top: 5%;
-    min-height: 30vh;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20%;
-    margin-left: 20%;
+  margin-top: 5%;
+  min-height: 30vh;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
 .sadrzaj {
-    text-align: left;
-    min-height: 20vh;
-     /*
+  text-align: left;
+  min-height: 20vh;
+  /*
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,170 +160,179 @@ nav {
 }
 
 .parent {
-    position: relative;
+  position: relative;
 }
-.banner img{
-    width: 100%;
-    animation: transitionIn 3s; 
+.banner img {
+  width: 100%;
+  animation: transitionIn 3s;
 }
 .sil {
-    position: absolute;
-    top: 0;
+  position: absolute;
+  top: 0;
 }
-.sil img{
-    width: 100%;   
-    opacity: 0;
-    animation: transitionOut 3s; 
-
+.sil img {
+  width: 100%;
+  opacity: 0;
+  animation: transitionOut 3s;
 }
 .odvajanje {
-    margin-top: 3%;
+  margin-top: 3%;
 }
 .logo {
-    float: right;
-    padding: 0px 20px 20px 0;
+  float: right;
+  padding: 0px 20px 20px 0;
 }
 
-.abs { 
-    font-size: 30px;
-    font-family: 'Saira Condensed', sans-serif;
-    text-align: right;
-    letter-spacing: 7px;
-    color: #1e2e2e;
-    position:absolute;
-    left: 60%;
-    top:40%;
-    animation: transitionIn 3s;
+.abs {
+  font-size: 30px;
+  font-family: "Saira Condensed", sans-serif;
+  text-align: right;
+  letter-spacing: 7px;
+  color: #1e2e2e;
+  position: absolute;
+  left: 60%;
+  top: 40%;
+  animation: transitionIn 3s;
 }
 .para {
-    font-size: 20px;
-    font-family: 'Saira Condensed', sans-serif;
-    text-align: right;
-    color: #1e2e2e;
-    animation: slideIn 2s;
+  font-size: 20px;
+  font-family: "Saira Condensed", sans-serif;
+  text-align: right;
+  color: #1e2e2e;
+  animation: slideIn 2s;
 }
 .ime {
-    font-size: 30px;
-    font-family: 'Saira Condensed', sans-serif;
-    text-align: center;
-    letter-spacing: 7px;
-    color: #1e2e2e;
-    position:absolute;
-    left: 29.5%;
-    top:40%;
-    animation: transitionIn 3s;
+  font-size: 30px;
+  font-family: "Saira Condensed", sans-serif;
+  text-align: center;
+  letter-spacing: 7px;
+  color: #1e2e2e;
+  position: absolute;
+  left: 29.5%;
+  top: 40%;
+  animation: transitionIn 3s;
 }
 
 .vfx {
-    margin-left: 10%;
-    margin-right: 10%;
-    min-height: 85vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  min-height: 85vh;
 }
 
 .muzika {
-    margin-left: 10%;
-    margin-right: 10%;
-    min-height: 70vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  min-height: 70vh;
 }
 .code {
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    min-height: 85vh;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  min-height: 60vh;
 }
 
 h2 {
-    letter-spacing: 3px;
-    text-align: center;
-    font-family: 'Saira Condensed', sans-serif;
-    color: #1e2e2e;
-    font-size: 35px;
-    margin-bottom: 5%;
+  letter-spacing: 3px;
+  text-align: center;
+  font-family: "Saira Condensed", sans-serif;
+  color: #1e2e2e;
+  font-size: 35px;
+  margin-bottom: 5%;
 }
 .list {
-    margin-top: 3vh;
-    font-family: 'Saira Condensed', sans-serif;
-    text-align: right;
-    color: #846751;
-    list-style: none;
-
+  margin-top: 3vh;
+  font-family: "Saira Condensed", sans-serif;
+  text-align: right;
+  color: #846751;
+  list-style: none;
 }
 .list li {
-    letter-spacing: 4px;
-    transition: .2s;
+  letter-spacing: 4px;
+  transition: 0.2s;
 }
 .list li:hover {
-    letter-spacing: 7px;
-    text-shadow: 1px 1px 20px #aa8a72;
-    transition: .2s;
+  letter-spacing: 7px;
+  text-shadow: 1px 1px 20px #aa8a72;
+  transition: 0.2s;
 }
 .text1 {
-    margin-top: 6%;
-    margin-left: 50%;
-    font-family: 'Saira Condensed', sans-serif;
-    color: #1e2e2e;
-    text-align: right;
-    font-size: 20px;
+  margin-top: 6%;
+  margin-left: 50%;
+  font-family: "Saira Condensed", sans-serif;
+  color: #1e2e2e;
+  text-align: right;
+  font-size: 20px;
 }
 
 .hodnik {
-    position: relative;
-    float: left;
-    width: 50%;
-
+  position: relative;
+  float: left;
+  width: 50%;
 }
-.hodnik img{
-    width: 100%; 
-    box-shadow: 0px 0px 70px #1e2e2e;
-
+.hodnik img {
+  width: 100%;
+  box-shadow: 0px 0px 70px #1e2e2e;
 }
 
 .hodnikdone {
-    left: 0;
-    position: absolute;
-    animation: loop 6s;
-    animation-iteration-count: infinite;
+  left: 0;
+  position: absolute;
+  animation: loop 6s;
+  animation-iteration-count: infinite;
 }
 
 .headphones {
-    width: 50%;
-    display: flex;
-    float: left;
+  width: 50%;
+  display: flex;
+  float: left;
 }
 .headphones img {
-    width: 30%;
-    margin-right: auto;
-    margin-left: 20%;
-    animation: vibr 5s;
-    animation-iteration-count: infinite;
+  width: 30%;
+  margin-right: auto;
+  margin-left: 20%;
+  animation: vibr 5s;
+  animation-iteration-count: infinite;
 }
 
 .code_s {
-    width: 50%;
-    display: flex;
-    float: left;
+  width: 50%;
+  display: flex;
+  float: left;
 }
 .code_s img {
-    width: 30%;
-    margin-right: auto;
-    margin-left: 10%;
-    margin-right: -20%;
+  width: 30%;
+  margin-right: auto;
+  margin-left: 10%;
+  margin-right: -20%;
 }
 
 .audiocon {
-    margin-top: 15vh;
-    margin-left: 30%;
-    margin-right: 30%;
+  margin-top: 15vh;
+  margin-left: 30%;
+  margin-right: 30%;
 }
-.audiocon audio{
-    width: 100%;
-    outline: 0px;
+.audiocon audio {
+  width: 100%;
+  outline: 0px;
 }
 .footer_g {
-    min-height: 4vh;
-    background: linear-gradient(180deg, rgba(2,8,8,1) 0%, rgba(6,11,10,1) 90%, rgba(132,103,81,1) 100%);
+  min-height: 10vh;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 8, 8, 1) 0%,
+    rgba(6, 11, 10, 1) 90%,
+    rgba(132, 103, 81, 1) 100%
+  );
 }
 footer {
-    min-height: 10vh;
-    background-color: #846751;
+  min-height: 4vh;
+  background-color: #846751;
+}
+.footer_info {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-family: "Saira Condensed", sans-serif;
+  margin-left: 30%;
+  margin-right: 30%;
 }
