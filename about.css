@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+@keyframes loop {
+    0%   {opacity: 0;}
+    50%  {opacity: 1;}
+    100% {opacity: 0;}
+}
 
 @keyframes transitionIn {
     0%   {opacity: 0;}
@@ -13,13 +18,11 @@
     75%  {opacity: 0;}
     100% {opacity: 1;}
 }
+
 @keyframes transitionOut {
-    0%   {opacity: 0;
-        transform: scale(.9);}
-    25%  {opacity: 1;
-        transform: scale(.9);}
-    50%  {opacity: 1;
-        transform: scale(.9)}
+    0%   {opacity: 0;}
+    25%  {opacity: 1;}
+    50%  {opacity: 1;}
     75%  {opacity: 1;
         transform: scale(1)}
     100% {opacity: 0;}
@@ -36,6 +39,20 @@
 
 body {
     background: #020808;
+}
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+a {
+    color: black;
 }
 nav {
     display: flex;
@@ -54,7 +71,8 @@ nav {
 .nav_links {
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    margin-left: 40%;
+    width: 30%;
     text-decoration: none;
 }
 .nav_links a{
@@ -72,26 +90,22 @@ nav {
     margin-right: 20%;
     margin-left: 20%;
 }
-.vfx {
-    margin-top: 5%;
-    min-height: 30vh;
-}
+
 .sadrzaj {
     text-align: left;
-    min-height: 50vh;
+    min-height: 20vh;
+     /*
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #000000;
-    box-shadow: -10px 10px 10px;
+    background: #000000; 
+    */
 }
 .gradient {
-    min-height: 20vh;
-    background: linear-gradient(#191919, black);
+    min-height: 10vh;
 }
-.banner {
+.parent {
     position: relative;
-    
 }
 .banner img{
     width: 100%;
@@ -99,12 +113,13 @@ nav {
 }
 .sil {
     position: absolute;
-    top: 7%;
+    top: 0;
 }
 .sil img{
     width: 100%;   
     opacity: 0;
-    animation: transitionOut 3s;
+    animation: transitionOut 3s; 
+
 }
 .odvajanje {
     margin-top: 3%;
@@ -113,18 +128,7 @@ nav {
     float: right;
     padding: 0px 20px 20px 0;
 }
-h2 {
-    margin-left: 3%;
-    font-family: 'Saira Condensed', sans-serif;
-    letter-spacing: 5px;
-    color: #beb136;
-}
-h1 {
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: grey;
-    border-radius: 30px;
-}
+
 .abs { 
     font-size: 30px;
     font-family: 'Saira Condensed', sans-serif;
@@ -150,42 +154,83 @@ h1 {
     letter-spacing: 7px;
     color: #1e2e2e;
     position:absolute;
-    left: 33%;
+    left: 29.5%;
     top:40%;
     animation: transitionIn 3s;
-
-
 }
 
-a:link { text-decoration: none; }
-
-
-a:visited { text-decoration: none; }
-
-
-a:hover { text-decoration: none; }
-
-
-a:active { text-decoration: none; }
-
-a {
-    color: black;
+.vfx {
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: 85vh;
 }
 
-.hobi {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.muzika {
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: 70vh;
+}
+.code {
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: 85vh;
+}
+
+h2 {
+    letter-spacing: 3px;
     text-align: center;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #1e2e2e;
     font-size: 30px;
-    background: rgb(236, 236, 236);
-    transition: .2s;
-    border-radius: 30px;
+    margin-bottom: 5%;
+}
+
+.text1 {
+    margin-top: 10%;
+    margin-left: 50%;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #1e2e2e;
+    text-align: right;
+    font-size: 20px;
+}
+
+.hodnik {
+    position: relative;
+    float: left;
+    width: 50%;
+
+}
+.hodnik img{
+    width: 100%; 
+    box-shadow: 0px 0px 70px #1e2e2e;
 
 }
 
+.hodnikdone {
+    left: 0;
+    position: absolute;
+    animation: loop 6s;
+    animation-iteration-count: infinite;
+}
 
+.headphones {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+.headphones img {
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+}
 
-.hobi:hover {
-    background: rgb(187, 187, 187);
-    transition: .3s;
-    border-radius: 10px;
+.audiocon {
+    margin-top: 15vh;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.audiocon audio{
+    width: 100%;
+    outline: 0px;
 }
