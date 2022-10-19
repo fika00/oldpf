@@ -348,7 +348,7 @@ footer {
 
 @media (max-width:991px) {
   .parent {
-    min-height: 120vh;
+    min-height: 70vh;
   }
   .ime {
     right: 50%;
@@ -401,6 +401,9 @@ footer {
   }
   .abs {
     font-size: 15px;
+  }
+  .parent {
+    min-height: 40vh;
   }
 }
 @media (max-width:360px) {
