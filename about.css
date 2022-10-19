@@ -22,16 +22,16 @@
     transform: translateX(0%);
   }
   2% {
-    transform: translateX(1%);
+    transform: translateX(2%);
   }
   3% {
-    transform: translateX(-1%);
+    transform: translateX(-2%);
   }
   6% {
-    transform: translateX(1%);
+    transform: translateX(2%);
   }
   7% {
-    transform: translateX(-1%);
+    transform: translateX(-2%);
   }
   11% {
     transform: translateX(0%);
@@ -163,6 +163,10 @@ nav {
 
 .parent {
   position: relative;  
+}
+.parent_phone {
+  position: relative;  
+  display: none;
 }
 .banner img {
   width: 100%;
@@ -299,7 +303,7 @@ h2 {
   width: 30%;
   margin-right: auto;
   margin-left: 20%;
-  animation: vibr 5s;
+  animation: vibr 2s;
   animation-iteration-count: infinite;
 }
 
@@ -382,8 +386,18 @@ footer {
   .code_s {
     width: 100%;
     float: none;
-    margin-left:  17%;
-    margin-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .code_s img{
+    width: 30%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -404,6 +418,19 @@ footer {
   }
   .parent {
     min-height: 40vh;
+  }
+  .parent_phone {
+    display: block;
+  }
+  .code_s img{
+    width: 20%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  .parent {
+    display: none;
   }
 }
 @media (max-width:360px) {
