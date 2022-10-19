@@ -392,3 +392,12 @@ footer {
     font-size: 15px;
   }
 }
+@media (max-width:475px) {
+  .ime {
+    text-align: left;
+    right: 0%;
+    left: 3%;
+    font-size: 15px;
+  }
+
+}
