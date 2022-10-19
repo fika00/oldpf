@@ -189,7 +189,31 @@ nav {
   float: right;
   padding: 0px 20px 20px 0;
 }
+.button {
+  background: linear-gradient(#334e4e, #5d8888 );
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  border-radius: 30px;
+  transition: 1s;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button:hover {
+  background: linear-gradient(#496e6e, #5d8888 );
+  transition: 1s;
+  width: 25%;
+  box-shadow: 1px 1px 40px #334e4e;
 
+}
+hr {
+  border-color: #5d8888;
+  background-color: #846751;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 60%;
+  opacity: 20%;
+}
 .abs {
   font-size: 30px;
   font-family: "Saira Condensed", sans-serif;
@@ -229,9 +253,10 @@ nav {
 }
 
 .muzika {
+  margin-top: 4%;
   margin-left: 10%;
   margin-right: 10%;
-  min-height: 70vh;
+  min-height: 85vh;
   animation: transitionIn 3s;
 
 }
@@ -380,6 +405,7 @@ footer {
   .headphones img {
     width: 40%;
   }
+
   .text1 {
     margin-left: 0%;
     margin-top: 80%;
@@ -434,11 +460,19 @@ footer {
 }
 
 @media (max-width:717px) {
+  .list {
+    font-size: 25px;
+  }
   .ime {
     font-size: 20px;
   }
   .abs {
     font-size: 20px;
+  }
+  .button {
+    margin-top: 10%;
+    font-size: 20px;
+    width: 50%;
   }
 }
 @media (max-width:553px) {
@@ -453,6 +487,10 @@ footer {
   }
   .parent_phone {
     display: block;
+  }
+  .list {
+    font-size: 20px;
+    text-align: center;
   }
   .code_s img{
     width: 20%;
