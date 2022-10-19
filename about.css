@@ -195,7 +195,7 @@ nav {
   font-family: "Saira Condensed", sans-serif;
   text-align: right;
   letter-spacing: 7px;
-  color: #1e2e2e;
+  color: #243838;
   position: absolute;
   left: 60%;
   top: 40%;
@@ -213,7 +213,7 @@ nav {
   font-family: "Saira Condensed", sans-serif;
   text-align: center;
   letter-spacing: 7px;
-  color: #1e2e2e;
+  color: #243838;
   position: absolute;
   left: 29.5%;
   top: 40%;
@@ -248,7 +248,7 @@ h2 {
   letter-spacing: 3px;
   text-align: center;
   font-family: "Saira Condensed", sans-serif;
-  color: #1e2e2e;
+  color: #334e4e;
   font-size: 35px;
   margin-bottom: 5%;
 }
@@ -269,10 +269,26 @@ h2 {
   transition: 0.2s;
 }
 .text1 {
-  margin-top: 6%;
-  margin-left: 50%;
+  margin-top: 8%;
+  margin-left: 60%;
   font-family: "Saira Condensed", sans-serif;
-  color: #1e2e2e;
+  color: #334e4e;
+  text-align: right;
+  font-size: 20px;
+}
+.text2 {
+  margin-top: 4%;
+  margin-left: 60%;
+  font-family: "Saira Condensed", sans-serif;
+  color: #334e4e;
+  text-align: right;
+  font-size: 20px;
+}
+.text3 {
+  margin-top: 8%;
+  margin-left: 60%;
+  font-family: "Saira Condensed", sans-serif;
+  color: #334e4e;
   text-align: right;
   font-size: 20px;
 }
@@ -365,7 +381,22 @@ footer {
     width: 40%;
   }
   .text1 {
-    margin-left: 6%;
+    margin-left: 0%;
+    margin-top: 80%;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10%;
+  }
+  .text2 {
+    margin-left: 0%;
+    margin-top: 60%;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10%;
+  }
+  .text3 {
+    margin-left: 0%;
+    margin-top: 10%;
     text-align: center;
     font-size: 30px;
   }
@@ -376,6 +407,7 @@ footer {
     margin-right: auto;
     margin-left: auto;
     padding: 5vh;
+    min-height: 10%;
 
   }
   .headphones img {
@@ -448,10 +480,19 @@ footer {
   }
 }
 @media (max-width:475px) {
+  .nav_links {
+    width: 40%;
+  }
   .ime {
     text-align: left;
     right: 0%;
     left: 3%;
+    font-size: 15px;
+  }
+  .abs {
+    text-align: right;
+    right: 0%;
+    left: 0%;
     font-size: 15px;
   }
 
