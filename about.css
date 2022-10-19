@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 @keyframes loop {
   0% {
     opacity: 0;
@@ -90,6 +91,8 @@
 
 body {
   background: #020808;
+  overflow-x:hidden;
+
 }
 a:link {
   text-decoration: none;
@@ -159,8 +162,7 @@ nav {
 }
 
 .parent {
-  position: relative;
-  
+  position: relative;  
 }
 .banner img {
   width: 100%;
@@ -340,6 +342,53 @@ footer {
   justify-content: space-between;
   text-align: center;
   font-family: "Saira Condensed", sans-serif;
-  margin-left: 30%;
-  margin-right: 30%;
+
+}
+
+
+@media (max-width:991px) {
+  .parent {
+    min-height: 120vh;
+  }
+  .ime {
+    right: 50%;
+    left: 12%
+  }
+  .hodnik {
+    width: 100%;
+  }
+  .headphones img {
+    width: 40%;
+  }
+}
+
+@media (max-width:717px) {
+  .ime {
+    font-size: 20px;
+  }
+  .abs {
+    font-size: 20px;
+  }
+}
+@media (max-width:553px) {
+  .ime {
+    font-size: 15px;
+  }
+  .abs {
+    font-size: 15px;
+  }
+}
+@media (max-width:360px) {
+  .ime {
+    text-align: left;
+    right: 0%;
+    left: 3%;
+    font-size: 15px;
+  }
+  .abs {
+    text-align: right;
+    right: 0%;
+    left: 0%;
+    font-size: 15px;
+  }
 }
