@@ -355,10 +355,35 @@ footer {
     left: 12%
   }
   .hodnik {
-    width: 100%;
+    width: 100%;    
   }
   .headphones img {
     width: 40%;
+  }
+  .text1 {
+    margin-left: 6%;
+    text-align: center;
+    font-size: 30px;
+  }
+  .headphones {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5vh;
+
+  }
+  .headphones img {
+    width: 40%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .code_s {
+    width: 100%;
+    float: none;
+    margin-left:  17%;
+    margin-right: 10%;
   }
 }
 
