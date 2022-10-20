@@ -310,6 +310,7 @@ hr {
   margin-right: 10%;
   border-radius: 60%;
   opacity: 20%;
+  animation: transitionIn 3s;
 }
 .abs {
   font-size: 30px;
