@@ -407,6 +407,11 @@ h2 {
   font-size: 35px;
   margin-bottom: 5%;
 }
+.photogallery {
+  margin-top: 3%;
+  text-align: left;
+  animation: transitionIn 3s;
+}
 .list {
   margin-top: 3vh;
   font-family: "Saira Condensed", sans-serif;
@@ -539,17 +544,23 @@ footer {
 
 
 .imgs_ss{
-  margin-top: 15;
+  margin-top: 3%;
   margin-left: 10%;
   margin-right: 10%;
   animation: gallery 3s;
 }
+
+
 .imgs_ss img {
   box-shadow: 1px 1px 70px #496e6e48;
   margin-top: 10vh;
   margin-bottom: 10vh;
   width: 100%;
 }
+.imgs_ss img:first-child {
+  margin-top: 3vh;
+}
+
 .img_1 {
   animation: slideIn .6s;
 }
