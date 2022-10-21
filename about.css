@@ -694,7 +694,21 @@ footer {
     margin-left: 70%;
     margin-top: 50%;
   }
-
+  .list {
+    text-align: right;
+  }
+  .text1 {
+    font-size: 25px;
+    text-align: left;
+  }
+  .text2 {
+    font-size: 25px;
+    text-align: left;
+  }
+  .text3 {
+    font-size: 25px;
+    text-align: left;
+  }
 
   .code_s img{
     width: 20%;
