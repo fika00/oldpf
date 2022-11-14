@@ -1,7 +1,3 @@
-// forma, iznos racuna za struju, datum placanja,
-// klikom na submit izracunava se da li je korisnik
-// platio racun do 5. u mjesecu, ako jeste ima popust 10%
-// ako nije cijeli ce iznost platiti
 let sum = document.getElementById("sum");
 let datum = document.getElementById("date");
 let output = document.getElementById("output");
@@ -37,18 +33,3 @@ submit.addEventListener("click", function(e) {
 
     }
 });
-
-// document.getElementById("datum").addEventListener("change", function() {
-//     let input = this.value;
-//     let dateEntered = new Date(input);
-// });
-
-// console.log(datum);
-
-// function izracunajIznos() {
-//     if (datum < 10) {
-
-//     } else {
-//         output.innerHTML = `Cijena: ${iznos.value}`;
-//     }
-// }
